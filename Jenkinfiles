@@ -13,13 +13,5 @@ pipeline {
             }
         }
     }
-    post {
-        success {
-            echo 'Deployment from master succeeded.'
-        }
-        failure {
-            echo 'Deployment from master failed.'
-        }
     }
-}
 
