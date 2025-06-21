@@ -1,0 +1,11 @@
+<!-- prod pom.xml -->
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.example</groupId>
+  <artifactId>my-project</artifactId>
+  <version>1.0</version>
+  <properties>
+    <env>prod</env>
+  </properties>
+</project>
+
