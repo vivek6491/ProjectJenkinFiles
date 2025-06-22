@@ -1,16 +1,16 @@
 pipeline {
     agent any
+
+triggers {
+        githubPush()
+    }
+
     stages {
         stage('Checkout') {
             steps {
                 checkout scm
             }
         }
-	
-	triggers {
-        githubPush()
-    }
-
         stage('Build Release') {
             steps {
                 echo "Building production release on master"
