@@ -6,6 +6,10 @@ pipeline {
                 checkout scm
             }
         }
+	triggers {
+        githubPush()
+    }
+
         stage('Build Release') {
             steps {
                 echo "Building production release on master"
