@@ -6,7 +6,7 @@ triggers {
     }
 
     stages {
-        stage('Checkout') {
+        stage('Checkout1') {
             steps {
                 checkout scm
             }
